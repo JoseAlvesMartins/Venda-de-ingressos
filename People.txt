@@ -1,0 +1,94 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection.Metadata.Ecma335;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace VendaDeIngressos.Models
+{
+    public class People
+    {
+        // Método construtor//
+
+        public People(string Name, string Email, string Cpf, string dtNascimento, string Senha)
+        {
+            this.Id = 1;
+            setName(Name);
+            setEmail(Email);
+            setCpf(Cpf);
+            setdtNascimento(dtNascimento);
+            setSenha(Senha);
+
+        }
+
+        //Atributos//
+
+        private int Id;
+        private string Name;
+        private string Email;
+        private string Cpf;
+        private string dtNascimento;
+        private string Senha;
+
+        //Metodos// 
+        public int getId() {
+            return Id;
+        }
+        public void setId(int id)
+        {
+            this.Id = id;
+        }
+
+        public string getName()
+        { 
+            return Name; 
+        }
+
+        public void setName(string Name)
+        {
+
+            this.Name = Name;
+        }
+
+        public string getEmail()
+        {
+            return Email;
+        }
+
+        public void setEmail(string Email)
+        {
+            this.Email = Email;
+        }
+
+        public string getCpf()
+        {
+            return Cpf;
+        }
+
+        public void setCpf(string Cpf)
+        {
+            this.Cpf = Cpf;
+        }
+
+        public string getdtNascimento() 
+        {
+            return dtNascimento;        
+        }
+        
+        public void setdtNascimento(string dtNascimento)
+        {
+            this.dtNascimento = dtNascimento;
+        }
+
+        public string getSenha()
+        {
+            return Senha;
+        }
+
+        public void setSenha(string Senha)
+        {
+            this.Senha = Senha;
+        }
+    }
+}

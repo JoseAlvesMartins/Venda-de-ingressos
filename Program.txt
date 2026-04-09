@@ -1,0 +1,24 @@
+using System;
+using VendaDeIngressos.Models;
+
+public class HelloWorld
+   {
+    public static void Main(string[] args)
+    {
+        People pessoa = new People("Carlinhos", "Alfredo@gmail.com", "123456789-11", "12-02-2009", "1234");
+
+        Console.WriteLine(pessoa.getName());
+        Console.WriteLine(pessoa.getEmail());
+        Console.WriteLine(pessoa.getCpf());
+        Console.WriteLine(pessoa.getdtNascimento());
+        Console.WriteLine(pessoa.getSenha());
+
+        Ingresso ingresso = new Ingresso("Avatar", "100", "Homens azuis", "10-10", "Brasil", "+18");
+        Console.WriteLine(ingresso.getName());
+        Console.WriteLine(ingresso.getPreco());
+        Console.WriteLine(ingresso.getDescricao());
+        Console.WriteLine(ingresso.getHorario());
+        Console.WriteLine(ingresso.getLocal());
+        Console.WriteLine(ingresso.getIndicacao());
+    }        
+}

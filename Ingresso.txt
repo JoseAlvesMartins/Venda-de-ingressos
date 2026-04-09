@@ -1,0 +1,86 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace VendaDeIngressos.Models
+{
+    public class Ingresso()
+    {
+
+        public Ingresso(string Name, string Preco, string Descricao, string Horario, string Local, string Indicacao)
+        {
+            setName(Name);
+            setPreco(Preco);
+            setDescricao(Descricao);
+            setHorario(Horario);
+            setLocal(Local);
+            setIndicacao(Indicacao);
+        }
+
+        //ATRIBUTOS//
+        private string Name;
+        private string Preco;
+        private string Descricao;
+        private string Horario;
+        private string Local;
+        private string Indicacao;
+
+        //METODOS//
+
+        public string getName()
+        {
+            return Name;
+        }
+        public void setName(string Name)
+        {
+            this.Name = Name;
+        }
+
+        public string getPreco()
+        {
+            return Preco;
+        }
+        public void setPreco(string Preco)
+        {
+            this.Preco = Preco;
+        }
+
+        public string getDescricao()
+        {
+            return Descricao;
+        }
+        public void setDescricao(string Descricao)
+        {
+            this.Descricao = Descricao;
+        }
+
+        public string getHorario()
+        {
+            return Horario;
+        }
+        public void setHorario(string Horario)
+        {
+            this.Horario = Horario;
+        }
+
+        public string getLocal()
+        {
+            return Local;
+        }
+        public void setLocal(string Local)
+        {
+            this.Local = Local;
+        }
+
+        public string getIndicacao()
+        {
+            return Indicacao;
+        }
+        public void setIndicacao(string Indicacao)
+        {
+            this.Indicacao = Indicacao;
+        }
+    }
+}
